@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "046a9c84-6b7d-48f0-a9fc-8d6dea9d0e2e",
+		"name": "SeguridadPermisos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23041526"
+	},
+	"item": [
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\":\"/rol\",\r\n    \"metodo\":\"delete\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9999/permisos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9999",
+					"path": [
+						"permisos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarPermisos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9999/permisos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9999",
+					"path": [
+						"permisos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarPermisosPorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9999/permisos/632fa320af536c175e5d881f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9999",
+					"path": [
+						"permisos",
+						"632fa320af536c175e5d881f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarPermiso",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\":\"/rol\",\r\n    \"metodo\":\"GET\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9999/permisos/632fa320af536c175e5d881f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9999",
+					"path": [
+						"permisos",
+						"632fa320af536c175e5d881f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BorrarPermiso",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9999/permisos/632fa64a511da9265c98fc8b",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9999",
+					"path": [
+						"permisos",
+						"632fa64a511da9265c98fc8b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
